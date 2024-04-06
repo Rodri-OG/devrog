@@ -1,0 +1,23 @@
+.skillsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  gap: 0.5rem;
+
+}
+.skillsWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 1rem;
+  background: #ffffff1a;
+  border: 1px solid #ffffff0d;
+  border-radius: 0.7rem;
+  color: #b4bcd0;
+  font-weight: 400;
+  line-height: 0.3rem;
+  margin: 1rem;
+  
+}

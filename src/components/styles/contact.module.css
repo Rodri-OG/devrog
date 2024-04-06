@@ -1,0 +1,75 @@
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 4fr repeat(2, 2fr);
+  place-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+.linkWrapper{
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.linkNav{
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #b4bcd0;
+
+}
+.linkNav:hover{
+  background: #ffffff1a;
+  border: 1px solid #ffffff0d;
+  border-radius: 2rem;
+  transition: all .3s ease-in-out;  
+}
+.title{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;}
+.text{
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+
+}
+
+.socialLink{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.iconSocial:hover{
+  animation: 2s infinite  alternate iconAnim;
+
+}
+
+.iconGithub:hover{
+  animation: 2s infinite alternate iconAnim;
+
+}
+@keyframes iconAnim {
+	0% {
+    fill: transparent;
+		stroke: #b4bcd0;
+    stroke-width: 1;	
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 32%;
+  
+  }
+  50%{
+    fill: transparent;
+		stroke: #b4bcd0;
+    stroke-width: 2;	
+
+  }
+}

@@ -1,0 +1,62 @@
+.containerNav{
+  display: grid;
+  place-content: center;
+  backdrop-filter: blur(10px);
+  height: 4rem;
+  text-decoration: none;
+
+
+}
+
+
+.ulNavbar{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  place-content: center;
+  list-style: none;
+  gap: 1rem;
+
+}
+
+
+.linkNav{
+    cursor: pointer;
+    font-weight: 400;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #b4bcd0;
+
+}
+.linkNav:hover{
+  background: #ffffff1a;
+  border: 1px solid #ffffff0d;
+  border-radius: 2rem;
+  transition: all .3s ease-in-out;  
+}
+
+
+
+.buttonNavbar{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 0px 1 rem;
+  background: #ffffff1a;
+  border: 1px solid #ffffff0d;
+  border-radius: 13rem;
+  color: #b4bcd0;
+  backdrop-filter: blur(1rem);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  white-space: nowrap;
+  transition-duration: 260ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: background, width;
+
+}
+
+
