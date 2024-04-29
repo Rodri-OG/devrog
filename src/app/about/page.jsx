@@ -3,6 +3,8 @@ import Skills from "@/components/Skills";
 import styles from "@/components/styles/about.module.css"
 import Link from "next/link";
 import Section from "@/components/Section";
+import fotoPerfil from "../../../public/img/Foto-Perfil-Rodrigo.jpg";
+import Image from "next/image";
 
 export default function About () {
   return(
@@ -27,7 +29,7 @@ export default function About () {
       </div>
 
       <div className={styles.imageWrapper}>
-        <img alt="portfolio" src="http://localhost:3000/img/Foto-Perfil-Rodrigo.jpg" className={styles.imageContainer}/>
+        <Image alt="perfil" src={fotoPerfil} className={styles.imageContainer}/>
       </div>
     </div>
 
