@@ -1,6 +1,9 @@
 import styles from "@/components/styles/worksection.module.css"
 import { useRef } from "react";
 import { motion, useScroll, useTransform, } from "framer-motion";
+import Image from "next/image";
+import codeBlock from "../../public/img/codeBlock.png"
+
 
 export default function WorkSection () {
   const targetRef = useRef(null);
@@ -25,9 +28,11 @@ export default function WorkSection () {
               <h3 className={styles.textSecond}>Diseñemos experiencias creativas y centradas en el usuario.</h3>
         </motion.div>
 
-        <div className={styles.wrapperSvg}> 
-          <motion.img style={{  opacity,scale }} alt="portfolio" src="http://localhost:3000/img/codeBlock.png" className={styles.imgSecond}/>
-        </div>
+        <motion.div className={styles.wrapperSvg}> 
+          <motion.div style={{  opacity,scale }} >
+            <Image alt="code" src={codeBlock} className={styles.imgSecond}/>
+          </motion.div>
+        </motion.div>
 
       </section>
     </>

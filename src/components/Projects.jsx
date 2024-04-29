@@ -3,7 +3,9 @@ import styles from "@/components/styles/projects.module.css"
 import Link from "next/link";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, } from "framer-motion";
-
+import Image from "next/image";
+import project01 from "../../public/img/Captura_de_Pantalla_01.png" 
+import project02 from "../../public/img/Captura_de_Pantalla_portfolio_01.png"
 
 
 export default function () {
@@ -31,7 +33,7 @@ export default function () {
               </div> 
               <Link href="https://to-see-app.vercel.app/">
               <div className={styles.imagesWrapper}>
-                <img alt="portfolio" src="http://localhost:3000/img/Captura_de_Pantalla_01.png" className={styles.imgStyle}/>
+                <Image alt="project01" src={project01} className={styles.imgStyle}/>
               </div>
               </Link>
             
@@ -48,7 +50,7 @@ export default function () {
             </div> 
             <Link href="https://devrog.vercel.app/">
               <div className={styles.imagesWrapper}>
-                <img alt="portfolio" src="http://localhost:3000/img/Captura_de_Pantalla_portfolio_01.png" className={styles.imgStyle}/>
+                <Image alt="project02" src={project02} className={styles.imgStyle}/>
               </div>
             </Link>
 
